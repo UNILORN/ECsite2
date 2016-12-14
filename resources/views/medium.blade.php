@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/css/medium.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
     <title>Medium</title>
   </head>
   <body>
 
+  <div class="title">
     <p class="medium_center">
       わたしのおんなのこ
     </p>
+  </div>
 
     <div class="navi">
       <ul>

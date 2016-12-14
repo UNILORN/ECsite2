@@ -1,6 +1,8 @@
 <?php
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -95,3 +97,9 @@ Route::get('/delete/all',function(){
   $cart->clear();
   return redirect("/cart");//カートページヘのリダイレクト
 });
+
+Auth::routes();
+
+// Auth::routes();
+
+Route::get('/home', 'HomeController@index');

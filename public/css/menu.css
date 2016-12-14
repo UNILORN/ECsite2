@@ -1,6 +1,13 @@
 .menu_center {
-    position: relative;
-    text-align: center;
+  text-align: center;
+  font-family: "Mplus 1p";
+  font-size: 23px;
+  letter-spacing: 7px;
+}
+
+.title{
+    vertical-align: middle;
+    margin-top: 45px;
 }
 
 .navi {

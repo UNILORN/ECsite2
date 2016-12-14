@@ -10,10 +10,11 @@
   </head>
   <body>
 
+  <div class="title">
     <p class="menu_center">
       わたしのおんなのこ
     </p>
-
+  </div>
     <div class="navi">
       <ul>
         <li><a href="/">TOP</a></li>

@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/css/long.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
     <title>Long</title>
   </head>
   <body>
 
+  <div class="title">
     <p class="long_center">
       わたしのおんなのこ
     </p>
+  </div>
 
     <div class="navi">
       <ul>

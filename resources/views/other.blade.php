@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/css/other.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
     <title>Other</title>
   </head>
   <body>
 
+  <div class="title">
     <p class="other_center">
       わたしのおんなのこ
     </p>
+  </div>
 
     <div class="navi">
       <ul>
