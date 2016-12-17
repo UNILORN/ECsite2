@@ -69,3 +69,8 @@
       height: 300px;
       font-family: 'Nunito', sans-serif;
 }
+
+.top_right{
+  text-align: right;
+  margin-top: 10pxma;
+}

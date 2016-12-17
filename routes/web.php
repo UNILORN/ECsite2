@@ -35,6 +35,11 @@ Route::get('/cart',function(){
   return view('cart');
 });
 
+Route::get('/logout',function(){
+  Auth::logout();
+  return redirect('/');
+});
+
 Route::get('/menu',function(Request $request){
   $Item = [];
   $id = $request -> get('id');

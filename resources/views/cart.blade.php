@@ -17,6 +17,16 @@
     </p>
   </div>
 
+  <div class="top_right">
+    @if(Auth::check())
+    <a href="/cart"><img height="50" src="img/cart.png"></a>&nbsp;&nbsp;&nbsp;
+      <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" name="button" onclick="location.href='logout'">ログアウト</button>&nbsp;&nbsp;&nbsp;
+      @else
+      <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" name="button" onclick="location.href='login'">ログイン</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" name="button" onclick="location.href='register'">新規登録</button>
+      @endif
+  </div>
+
     <div class="navi">
       <ul>
         <li><a href="/">TOP</a></li>
@@ -27,22 +37,25 @@
     </div>
 
     @if($items)
-<div class="center2">
-  <table class="cart_table">
-    <tr class="info2">
-      <td>商品名</td>
-      <td>価格</td>
-    </tr>
-    @foreach($items as $index=>$Product)
-    <tr>
-      <td class="cart_td">{{$Product->name}}</td>
-      <td class="cart_td">{{$Product->price}}</td>
-      <td class="cart_td"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="location.href='/delete?index={{$index}}'">削除</button></td>
-      <td class="cart_td"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="location.href='/delete/all?index={{$index}}'">全削除</button></td>
-    </tr>
-    @endforeach
-  </table>
-</div>
+      <div class="center2">
+        <table class="cart_table">
+          <tr class="info2">
+            <td>商品名</td>
+            <td>価格</td>
+          </tr>
+          @foreach($items as $index=>$Product)
+          <tr>
+            <td class="cart_td">{{$Product->name}}</td>
+            <td class="cart_td">{{$Product->price}}</td>
+            <td class="cart_td"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="location.href='/delete?index={{$index}}'">削除</button></td>
+          </tr>
+          @endforeach
+          <tr>
+            <td></td>
+            <td class="cart_td2"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="location.href='/delete/all?index={{$index}}'">全削除</button></td>
+          </tr>
+        </table>
+      </div>
 @else
 <div class="cart_center">
   <p>商品は入っていません。</p>
